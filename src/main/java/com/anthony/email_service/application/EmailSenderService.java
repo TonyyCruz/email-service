@@ -1,13 +1,13 @@
 package com.anthony.email_service.application;
 
 import com.anthony.email_service.adapter.IEmailSenderGateway;
-import com.anthony.email_service.core.IEmailSender;
+import com.anthony.email_service.core.IEmailSenderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
-public class EmailSenderService implements IEmailSender {
+public class EmailSenderService implements IEmailSenderService {
     private final IEmailSenderGateway senderGateway;
 
     @Override
